@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Admin Page</title>
+	
+	<link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+  	<script th:src="@{/js/jquery-3.2.1.js}"></script>
+  	<script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/allPostAjax.js}"></script>
+  	<style>
+	  	 /* Set black background color, white text and some padding */
+	    footer {
+	      background-color: #555;
+	      color: white;
+	      padding: 15px;
+	    }
+	     /* Note: Try to remove the following lines to see the effect of CSS positioning */
+	   .affix {
+	      top: 0;
+	      width: 100%;
+	      z-index: 1; 
+	   }
+	
+	   .affix + .container-fluid {
+	      padding-top: 70px;
+	   }
+  	</style>
+  	
+</head>
+
+<body>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="0">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	      <li class="active" style="padding-top: -2%;">
+	      	<a th:href="@{/logout}">Logout</a>
+	      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div class="container">
+		<!-- <form th:action="@{/logout}" method="get">
+			<button class="btn btn-md btn-danger btn-block" name="signup"
+				type="Submit">Logout</button>
+		</form>  -->   
+		
+		<div class="panel-group" style="margin-top:40px">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<span th:utext="${userName}"></span>
+				</div>
+				<br/>
+						
+		<div class="row" th:if="${all_posts}">
+			<div  th:id="'div_post_' + ${post.postId}" class="col-lg-6" th:each="post : ${all_posts}">
+				<div class="panel panel-default"style="margin: 2%;">
+					<div class="row panel-body" th:if="${all_posts}">
+						<div class="col-md-12" style="margin-top: 20px;">
+							<div class="col-sm-12">
+								<div class="col-sm-12 well" th:text="${post.user.name} + ' ' + ${post.user.lastName} + ':-  ' + ${post.postText}" >
+								</div>
+								<div id="button-container">
+									<div class="col-sm-12" style="align:left; width: 15%">
+										<div th:id="'div_share_' + ${__${post.postId}__}" style="float:left;">
+											<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" th:id="${post.postId}" 
+												th:onclick="'shareOnPost(\''+ ${post.postId} + '\',\'' + ${current_user.userId}+ '\',\'' + ${post.user.name}+'\',\'' + ${post.user.lastName}+ '\',\'' + ${post.postText} +'\',this);'"
+												>Share</button>
+										</div>
+									</div>
+									<div class="col-sm-5" style="width: 15%">
+										<div th:id="'div_like_' + ${__${post.postId}__}">
+											<button th:id="'like_' + ${__${post.postId}__}" class="btn btn-primary" th:value="${post.postId}" 
+												onClick="ajaxLike(this)"> Like <span style="background-color: red; " th:text="${post.likeCount}"></span></button>
+										</div>
+									</div>
+									<div style="overflow: auto;"></div>
+								</div>
+									
+									 <!-- Modal -->
+									<div id="myModal" class="modal fade" role="dialog">
+									  <div class="modal-dialog">
+									    Modal content
+										    <div class="modal-content">
+										    <div class="modal-header">
+										      <button type="button" class="close" data-dismiss="modal">&times;</button>
+										      <h4 class="modal-title">Share This Post</h4>
+										    </div>
+										    <div class="modal-body" id="target-model-body">
+											    <div class="form-group">
+											      <form role="form" id="modal-inner-form" onsubmit="ajaxShare(this);">
+											      	<div class="col-sm-12">
+												      	<input class="form-control" id="aboutShare" type="text"  placeholder="Say something about this post.." name="aboutShare" value="" />
+												  		&nbsp;
+											  		</div>
+											      	<div class="model-form-body-container">
+												  		<div class="panel panel-default">
+															<div class="row panel-body">
+														  		<div class="col-sm-12 ">
+															  		<b><lable id="share-post-user-name" style="margin-top:20px;margin-left:20px; text-decoration: underline;"></lable></b>
+															  		<label id="sharepostdata" style="margin-top:20px;margin-left:20px; outline: none;"></label>
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-12">
+															<input type="hidden" name="postId" id="sharedPostId" value=""/>
+															<input type="hidden" name="userId" id="sharingUserId" value=""/>
+															&nbsp;
+															<lable class="navbar-text">Share with</lable>
+															<input class="form-control" id="toShare" name="toShare" type="text"  placeholder="Share with.."/>
+												       </div>	&nbsp;
+													    <div class="modal-footer">
+													      <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+													      <button type="submit" class="btn btn-primary">Share</button>
+													    </div>
+												    </div>
+												 </form>
+											   </div>
+										    </div> <!-- end of div class="modal-body" -->
+									       </div> <!-- end of div class="modal-content" -->
+									  </div>
+									</div>
+								</div>
+								
+							<div class="col-md-12">
+								<div class="panel panel-default"style="margin: 2%;">
+									<div class="row panel-body" th:if="${all_posts}">
+										<div class="all-comment-container" th:if="${all_comments}"><b>All Comments:</b></div>
+										<div class="col-md-12" th:each="comments : ${all_comments}">
+											<div th:each="comment : ${comments}">
+												<div th:if="${comment.post.postId} == ${__${post.postId}__}" >
+													<div class="col-sm-12 well well-sm" >
+														<div th:text="${comment.user.name} + ' ' + ${comment.user.lastName} + ':-  ' + ${comment.commentText}"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div th:class="update-comment-div_ + ${__${post.postId}__}"></div>
+									</div>
+								</div>
+								&nbsp;
+								<div class="col-md-12">
+									<form method="POST" autocomplete="off" th:id="'comment_' + ${__${post.postId}__}" th:name="'comment_' + ${__${post.postId}__}" 
+									th:object="${comment}" class="form-horizontal" role="form" onsubmit="addComment(this);" >
+										
+										<div class="col-md-9">
+											<input type="text" name="commentText" placeholder="write a comment" class="post-comment form-control" />
+											<input type="hidden" th:id="${__${post.postId}__}"  name="post" th:value="${__${post.postId}__}" />
+											<input type="hidden" name="user" th:value="*{user.userId}" />
+										</div>
+										<div class="col-md-2">
+											<input type="submit" th:value="Comment" class="btn btn-info" postId="${post.postId}"/>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div><!-- end of div with th:each -->
+		</div>
+				<p class="admin-message-text text-center" eth:utext="${adminMessage}"></p>
+			</div>
+		</div>
+		
+		
+	</div>
+	<footer class="container-fluid text-center">
+  		<p>© Neeraj Kumar | A simple HTML5 CSS3 and Bootstrap Template : 2017</p>
+	</footer>
+</body>
+</html>
