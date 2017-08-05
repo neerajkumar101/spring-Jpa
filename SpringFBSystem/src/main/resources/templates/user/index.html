@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Admin Page</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" />
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+  	<script th:src="@{/js/jquery-3.2.1.js}"></script>
+  	<script th:src="@{/js/bootstrap.min.js}"></script>
+  	<script th:src="@{/js/myAjax.js}"></script>
+  	
+  	<style>
+	  	 /* Set black background color, white text and some padding */
+	    footer {
+	      background-color: #555;
+	      color: white;
+	      padding: 15px;
+	    }
+	     /* Note: Try to remove the following lines to see the effect of CSS positioning */
+	   .affix {
+	      top: 0;
+	      width: 100%;
+	      z-index: 1; 
+	   }
+	
+	   .affix + .container-fluid {
+	      padding-top: 70px;
+	   }
+  	</style>
+  	
+</head>
+
+<body>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="0">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	      <li class="active" style="padding-top: -2%;">
+	      	<a th:href="@{/logout}">Logout</a>
+	      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div class="container">
+		<!-- <form th:action="@{/logout}" method="get">
+			<button class="btn btn-md btn-danger btn-block" name="signup"
+				type="Submit">Logout</button>
+		</form>  -->   
+		
+		<div class="panel-group" style="margin-top:40px">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<span th:utext="${userName}"></span>
+				</div>
+				<br/>
+				
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<form autocomplete="off" action="#" th:action="@{/submit_post}"	th:object="${post_ob}" method="post" 
+					class="form-horizontal" role="form">
+					<h4>Post Something</h4>
+					<div class="form-group">
+						<div class="col-sm-9">
+						
+						<input type="text" th:field="*{postText}" placeholder="Share whats in your mind." class="form-control" required/>
+						<input type="hidden" th:field="*{user.userId}" th:value="*{user.userId}" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-9">
+							<button type="submit" class="btn btn-primary btn-block">Post</button>
+						</div>
+					</div>
+					
+					<span th:utext="${successMessage}"></span>
+					
+					
+				</form>
+			</div>
+		</div>
+		
+		<div class="row" th:if="${user_posts}">
+			<div  class="col-lg-6" th:each="post : ${user_posts}">
+				<div class="panel panel-default"style="margin: 2%;">
+					<div class="row panel-body" th:if="${user_posts}">
+						<div class="col-md-12" style="margin-top: 20px;">
+							<div class="col-sm-12">
+								<div class="col-sm-7 well" th:text="${post.postText}" ></div>
+								
+								<div class="col-sm-5" style="align:left;">
+									<button th:id="'share_' + ${__${post.postId}__}" class="btn btn-success" th:value="${post.postId}" 
+										onclick="ajaxShare()"> Share </button>
+									<div th:id="'div_like_' + ${__${post.postId}__}">
+										<button th:id="'like_' + ${__${post.postId}__}" class="btn btn-primary" th:value="${post.postId}" 
+											onClick="ajaxLike(this)"> Like <span style="background-color: red; " th:text="${post.likeCount}"></span></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="col-sm-12" th:if="${comments_on_post}"> 	</div>
+								
+								<div th:if="${comment}" class="col-md-6 comment-div"></div>
+								<div class="update-comment-div"></div>
+								&nbsp;
+								
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div><!-- end of div with th:each -->
+		</div>
+				<p class="admin-message-text text-center" eth:utext="${adminMessage}"></p>
+			</div>
+		</div>
+		
+		
+	</div>
+	<footer class="container-fluid text-center">
+  		<p>Footer Text</p>
+	</footer>
+</body>
+</html>
