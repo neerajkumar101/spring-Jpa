@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../resources/js/angular.min.js"></script>
+<script type="text/javascript" src="../resources/js/mainController.js"></script>
+</head>
+<body ng-app="usersListing" ng-controller="userUpdate"> 
+      <form ng-submit="updateUserData()">
+      	Input Id: <input type="text" ng-model="user.id"/><br /><br />
+      	New Name: <input type="text" ng-model="user.name"/><br /><br />
+      	New Email: <input type="text" ng-model="user.email" /><br /><br />
+      	<input type="submit" value="Submit"/>
+      </form>
+      {{message}}
+</body>
+</html>

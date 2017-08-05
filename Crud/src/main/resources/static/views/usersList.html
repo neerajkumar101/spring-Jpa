@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../resources/js/angular.min.js"></script>
+<script type="text/javascript" src="../resources/js/mainController.js"></script>
+</head>
+<body ng-app="usersListing" ng-controller="userListController">
+      <table ng-repeat="users in usersList">
+	       <tr>
+		       <td>Id</td>
+		       <td>Name</td>
+		       <td>Email</td>
+	       </tr>
+	       <tr ng-repeat="userData in users">
+		       <td> {{userData['id']}}</td>
+		       <td> {{userData['name']}}</td>
+		       <td> {{userData['email']}}</td>
+	       </tr>
+       </table>
+
+</body>
+</html>
