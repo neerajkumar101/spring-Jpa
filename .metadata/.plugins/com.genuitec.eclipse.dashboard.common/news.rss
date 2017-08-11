@@ -12,12 +12,31 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Thu, 10 Aug 2017 09:50:12 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 10 Aug 2017 22:00:13 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.6.1</generator>
 	<item>
+		<title>Navigating through an Angular Project</title>
+		<link>https://www.genuitec.com/navigating-angular-project/</link>
+		<pubDate>Thu, 10 Aug 2017 15:41:12 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[Angular]]></category>
+		<category><![CDATA[code navigation]]></category>
+		<category><![CDATA[navigate between files]]></category>
+		<category><![CDATA[navigate within files]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=533342</guid>
+		<description><![CDATA[<p>You might now be familiar with easy cruising through a Webclipse or an Eclipse project after reading our blog or thanks to a personal experience, but what if you are more of an Angular guy or gal? No worries, breezy navigation is also a reality for Angular projects.This video will give you some useful tips [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/navigating-angular-project/">Navigating through an Angular Project</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>Enhanced Code Navigation Made Possible with Webclipse</title>
 		<link>https://www.genuitec.com/enhanced-code-navigation-webclipse/</link>
 		<pubDate>Mon, 07 Aug 2017 17:01:17 +0000</pubDate>
@@ -264,32 +283,14 @@
 <p>The post <a rel="nofollow" href="https://www.genuitec.com/genuitec-went-virtual-before-it-was-cool/">Genuitec Went Virtual Before It Was Cool!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>Slack Is Using TypeScript, and You Should Too!</title>
-		<link>https://www.genuitec.com/slack-using-typescript/</link>
-		<pubDate>Wed, 14 Jun 2017 17:11:03 +0000</pubDate>
-		<dc:creator><![CDATA[Wanda Muriy]]></dc:creator>
-				<category><![CDATA[Eclipse]]></category>
-		<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[MyEclipse]]></category>
-		<category><![CDATA[Programming Tips]]></category>
-		<category><![CDATA[Webclipse]]></category>
-		<category><![CDATA[typescript]]></category>
-		<category><![CDATA[using typescript]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=525382</guid>
-		<description><![CDATA[<p>Building a desktop application with multiple threads is a challenge not everyone is up to. No problem for TypeScript, though! All the pieces must fit in perfectly to make sure an application doesn’t crash due to even a tiny mistake. For this reason, folks at Slack (and many others) have put their faith in it. [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/slack-using-typescript/">Slack Is Using TypeScript, and You Should Too!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
 <!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
 
-Object Caching 9265/9378 objects using disk
+Object Caching 9276/9391 objects using disk
 Page Caching using disk: enhanced (Requested URI is rejected)
 Content Delivery Network via resources.cloud.genuitec.com
-Database Caching 25/42 queries in 0.013 seconds using disk
+Database Caching 41/43 queries in 0.006 seconds using disk
 
- Served from: www.genuitec.com @ 2017-08-10 05:36:46 by W3 Total Cache -->
+ Served from: www.genuitec.com @ 2017-08-10 23:39:51 by W3 Total Cache -->

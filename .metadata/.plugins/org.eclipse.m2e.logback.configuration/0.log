@@ -163,3 +163,208 @@
 2017-08-10 16:25:52,723 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
 2017-08-10 19:50:41,749 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@702ba8{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
 2017-08-10 19:50:41,786 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@311c9dd8{/help,null,UNAVAILABLE}
+2017-08-11 10:11:15,043 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @131364ms
+2017-08-11 10:11:15,278 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-08-11 10:11:15,334 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@31585d01{/help,null,AVAILABLE}
+2017-08-11 10:11:15,341 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@c0f8ff1{HTTP/1.1,[http/1.1]}{127.0.0.1:46702}
+2017-08-11 10:11:15,342 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @131684ms
+2017-08-11 10:13:20,353 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:13:20,364 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:13:20,393 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:13:20,400 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:13:20,400 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:14:39,818 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:14:39,867 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:14:39,868 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:14:39,871 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:14:39,871 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:16:20,271 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:16:20,278 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:16:20,281 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:16:20,288 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:16:20,294 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:17:40,416 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:17:40,417 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:17:40,419 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:17:40,422 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:17:40,422 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:20:17,367 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:20:17,368 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:20:17,370 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:20:17,373 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:20:17,373 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:21:32,690 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:21:32,691 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:21:32,693 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:21:32,696 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:21:32,696 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:21:36,631 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:21:36,634 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:21:36,636 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:21:36,638 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:21:36,639 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:21:48,848 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:21:48,849 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:21:48,850 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:21:48,858 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:21:48,858 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:24:41,096 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:24:41,096 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:24:41,098 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:24:41,101 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:24:41,101 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:25:51,855 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:25:51,856 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:25:51,857 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:25:51,861 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:25:51,861 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:26:24,885 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:26:24,885 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:26:24,887 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:26:24,889 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:26:24,890 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:27:09,493 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:27:09,494 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:27:09,495 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:27:09,498 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:27:09,499 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:28:09,278 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:28:09,279 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:28:09,281 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:28:09,284 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:28:09,284 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:41:27,348 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:41:27,349 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:41:27,350 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:41:27,354 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:41:27,354 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:43:43,556 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:43:43,557 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:43:43,558 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:43:43,562 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:43:43,562 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:44:19,117 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:44:19,118 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:44:19,119 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:44:19,125 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:44:19,125 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:45:40,970 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:45:40,971 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:45:40,972 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:45:40,975 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:45:40,975 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:45:59,156 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:45:59,157 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:45:59,158 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:45:59,161 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:45:59,161 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:51:36,209 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:51:36,211 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:51:36,213 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:51:36,233 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:51:36,239 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:51:46,527 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:51:46,528 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:51:46,532 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:51:46,534 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:51:46,535 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:54:09,513 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:54:09,514 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:54:09,515 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:54:09,518 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:54:09,518 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:55:20,115 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:55:20,115 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:55:20,117 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:55:20,120 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:55:20,120 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:55:31,717 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:55:31,718 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:55:31,719 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:55:31,721 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:55:31,721 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:56:04,849 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:56:04,850 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:56:04,851 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:56:04,854 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:56:04,854 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:56:35,601 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:56:35,602 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:56:35,602 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:56:35,605 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:56:35,605 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:56:46,221 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:56:46,221 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:56:46,223 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:56:46,226 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:56:46,226 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:56:54,226 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:56:54,227 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:56:54,227 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:56:54,229 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:56:54,230 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:59:34,590 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:59:34,591 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:59:34,592 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:59:34,595 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:59:34,595 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 10:59:43,099 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:59:43,100 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 10:59:43,101 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 10:59:43,104 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 10:59:43,105 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:03:09,960 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:03:09,961 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:03:09,962 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:03:09,977 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:03:09,977 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:05:05,954 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:05:05,955 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:05:05,956 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:05:05,959 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:05:05,960 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:05:35,339 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:05:35,340 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:05:35,341 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:05:35,344 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:05:35,344 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:05:54,437 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:05:54,437 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:05:54,438 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:05:54,440 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:05:54,441 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:06:30,736 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:06:30,737 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:06:30,738 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:06:30,741 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:06:30,741 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:18:16,663 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:18:16,663 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:18:16,667 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:18:16,669 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:18:16,670 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:18:40,242 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:18:40,242 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:18:40,243 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:18:40,248 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:18:40,248 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:18:50,380 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:18:50,381 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:18:50,384 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:18:50,386 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:18:50,387 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:19:07,984 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:19:07,984 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:19:07,986 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:19:07,989 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:19:07,989 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:19:20,024 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:19:20,025 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:19:20,025 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:19:20,027 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:19:20,028 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
+2017-08-11 11:19:55,420 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:19:55,420 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-08-11 11:19:55,422 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2017-08-11 11:19:55,425 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-08-11 11:19:55,425 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/neeraj/git/Angular4SpringBootAPI-Integration/src/test/resources
