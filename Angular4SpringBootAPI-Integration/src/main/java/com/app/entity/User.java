@@ -11,12 +11,11 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name="user_tbl")
@@ -36,18 +35,20 @@ public class User {
 	@Column(name="address")
 	private String address;
 
+	//orphanRemoval=true, only used in unidirectional mapping for automatic removal of child nodes
+		
 	//user is target entity
-	@OneToOne(mappedBy="credentialUser", cascade = CascadeType.ALL, 
-			orphanRemoval = true, fetch = FetchType.LAZY)
+	@OneToOne(mappedBy="credentialUser", cascade = CascadeType.ALL)//fetch = FetchType.LAZY,
+	@JsonManagedReference
 	private Credential credential;
 	
-	@OneToMany(fetch=FetchType.LAZY, mappedBy="user", orphanRemoval=true, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy="user", cascade = CascadeType.ALL)
 //	@JoinColumn(name="post_id")
-//	@JsonBackReference
+	@JsonManagedReference
 	private List<Post> posts = new ArrayList<>();
 	
-	@ManyToMany(fetch=FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="sharedBy")
-//	@JsonBackReference
+	@OneToMany(mappedBy="sharedBy", cascade = CascadeType.ALL)
+//	@JsonManagedReference
 	private List<Post> sharedPosts = new ArrayList<>();
 	
 	public long getUserId() {

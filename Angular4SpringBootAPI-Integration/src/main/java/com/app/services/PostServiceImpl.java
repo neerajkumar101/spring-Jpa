@@ -17,6 +17,8 @@ public class PostServiceImpl implements PostServiceInterface {
 	
 	@Override
 	public Post publishPost(User user, Post post) {
+		post.setLikeCount(new Long(0));
+		post.setShareCount(new Long(0));
 		post.setUser(user);
 		Post postSaved = postRepo.save(post);
 //		user.getPosts().add(post);
@@ -44,8 +46,10 @@ public class PostServiceImpl implements PostServiceInterface {
 	@Override
 	public Post sharePost(User sharingUser, Post post) {
 		sharingUser.addPost(post);
-		post.getSharedBy().add(sharingUser);
-		post.setSharingUser(sharingUser);
+		post.setSharedBy(sharingUser);
+		
+//		post.setSharingUser(sharingUser);
+		
 //		post.getSharedBy().add(sharingUser);
 		postRepo.save(post);
 		return post;

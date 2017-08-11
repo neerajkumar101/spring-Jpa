@@ -1,9 +1,8 @@
 package com.app.entity;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -11,10 +10,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Table(name="post_tbl")
@@ -28,20 +27,24 @@ public class Post {
 	@Column(name="post_text")
 	private String postText;
 	
+	@Column(name="like_count")
 	private Long likeCount;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="user_id", nullable=false)
+	@Column(name="share_count")
+	private Long shareCount;
+	
+	@ManyToOne(fetch=FetchType.LAZY, cascade={CascadeType.PERSIST, CascadeType.MERGE})
+	@JoinColumn(name="user_id")
+	@JsonBackReference
 	private User user;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	private User sharingUser;
+//	@ManyToOne(fetch=FetchType.LAZY)
+//	private User sharingUser;
 	
-	@ManyToMany(fetch=FetchType.LAZY)
-	@JoinTable(name="shared_by",
-		joinColumns=@JoinColumn(name="post_id"),
-		inverseJoinColumns=@JoinColumn(name="user_id"))
-	private List<User> sharedBy = new ArrayList<User>();
+	@ManyToOne(fetch=FetchType.LAZY, cascade={CascadeType.PERSIST, CascadeType.MERGE})
+	@JoinColumn(name="shared_by")
+//	@JsonBackReference
+	private User sharedBy;
 
 	public Long getPostId() {
 		return postId;
@@ -63,6 +66,14 @@ public class Post {
 		this.likeCount = likeCount;
 	}
 
+	public Long getShareCount() {
+		return shareCount;
+	}
+
+	public void setShareCount(Long shareCount) {
+		this.shareCount = shareCount;
+	}
+
 	public User getUser() {
 		return user;
 	}
@@ -71,18 +82,22 @@ public class Post {
 		this.user = user;
 	}
 
-	public User getSharingUser() {
-		return sharingUser;
-	}
+//	public User getSharingUser() {
+//		return sharingUser;
+//	}
+//
+//	public void setSharingUser(User sharingUser) {
+//		this.sharingUser = sharingUser;
+//	}
 
-	public void setSharingUser(User sharingUser) {
-		this.sharingUser = sharingUser;
-	}
-
-	public List<User> getSharedBy() {
+	public User getSharedBy() {
 		return sharedBy;
 	}
 	
+	public void setSharedBy(User sharedBy) {
+		this.sharedBy = sharedBy;
+	}
+
 	@Override
     public boolean equals(Object o) {
         if ( this == o ) {

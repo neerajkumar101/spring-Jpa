@@ -1,5 +1,6 @@
 package com.app.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -9,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Table(name="credential_tbl")
@@ -28,8 +31,9 @@ public class Credential {
 	private String voterIdCardNo;
 	
 	////credential is source entity
-	@OneToOne(fetch = FetchType.LAZY)
+	@OneToOne(fetch = FetchType.LAZY, cascade={CascadeType.PERSIST, CascadeType.MERGE})
 	@JoinColumn(name="user_id") //, unique=true, nullable=false, updatable=false
+	@JsonBackReference
 	private User credentialUser;
 
 	public long getCredId() {
