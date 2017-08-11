@@ -38,12 +38,8 @@ public class Post {
 	@JsonBackReference
 	private User user;
 	
-//	@ManyToOne(fetch=FetchType.LAZY)
-//	private User sharingUser;
-	
 	@ManyToOne(fetch=FetchType.LAZY, cascade={CascadeType.PERSIST, CascadeType.MERGE})
 	@JoinColumn(name="shared_by")
-//	@JsonBackReference
 	private User sharedBy;
 
 	public Long getPostId() {
@@ -81,14 +77,6 @@ public class Post {
 	public void setUser(User user) {
 		this.user = user;
 	}
-
-//	public User getSharingUser() {
-//		return sharingUser;
-//	}
-//
-//	public void setSharingUser(User sharingUser) {
-//		this.sharingUser = sharingUser;
-//	}
 
 	public User getSharedBy() {
 		return sharedBy;

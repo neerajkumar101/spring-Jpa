@@ -30,9 +30,8 @@ public class Credential {
 	@Column(name="voter_id_card_no", unique=true)
 	private String voterIdCardNo;
 	
-	////credential is source entity
 	@OneToOne(fetch = FetchType.LAZY, cascade={CascadeType.PERSIST, CascadeType.MERGE})
-	@JoinColumn(name="user_id") //, unique=true, nullable=false, updatable=false
+	@JoinColumn(name="user_id") 
 	@JsonBackReference
 	private User credentialUser;
 

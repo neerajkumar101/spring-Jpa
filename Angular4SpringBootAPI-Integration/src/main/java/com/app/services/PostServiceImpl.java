@@ -21,8 +21,6 @@ public class PostServiceImpl implements PostServiceInterface {
 		post.setShareCount(new Long(0));
 		post.setUser(user);
 		Post postSaved = postRepo.save(post);
-//		user.getPosts().add(post);
-//		userRepo.save(user);
 		return postSaved;
 	}
 
@@ -47,10 +45,6 @@ public class PostServiceImpl implements PostServiceInterface {
 	public Post sharePost(User sharingUser, Post post) {
 		sharingUser.addPost(post);
 		post.setSharedBy(sharingUser);
-		
-//		post.setSharingUser(sharingUser);
-		
-//		post.getSharedBy().add(sharingUser);
 		postRepo.save(post);
 		return post;
 	}

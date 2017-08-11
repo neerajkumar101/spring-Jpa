@@ -54,18 +54,6 @@ public class MainController {
 				return new ResponseEntity<Credential>(crdntl, HttpStatus.BAD_REQUEST);
 			}
 		} 
-		/*if(usr != null){
-			try {
-				crdntl = crdntlService.saveCredential(usr, credential);
-			} catch (Exception e) {
-				System.err.println(e.getMessage());
-				return new ResponseEntity<Credential>(crdntl, HttpStatus.BAD_REQUEST);
-			}
-			return new ResponseEntity<Credential>(crdntl, HttpStatus.OK);
-		} else {
-			return new ResponseEntity<Credential>(crdntl, HttpStatus.BAD_REQUEST);
-		}*/
-		
 		if(usr != null){
 			crdntl = crdntlService.saveCredential(usr, credential);
 			return new ResponseEntity<Credential>(crdntl, HttpStatus.OK);

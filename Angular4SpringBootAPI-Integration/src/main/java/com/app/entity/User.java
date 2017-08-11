@@ -7,7 +7,6 @@ import java.util.Objects;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -35,20 +34,15 @@ public class User {
 	@Column(name="address")
 	private String address;
 
-	//orphanRemoval=true, only used in unidirectional mapping for automatic removal of child nodes
-		
-	//user is target entity
 	@OneToOne(mappedBy="credentialUser", cascade = CascadeType.ALL)//fetch = FetchType.LAZY,
 	@JsonManagedReference
 	private Credential credential;
 	
 	@OneToMany(mappedBy="user", cascade = CascadeType.ALL)
-//	@JoinColumn(name="post_id")
 	@JsonManagedReference
 	private List<Post> posts = new ArrayList<>();
 	
 	@OneToMany(mappedBy="sharedBy", cascade = CascadeType.ALL)
-//	@JsonManagedReference
 	private List<Post> sharedPosts = new ArrayList<>();
 	
 	public long getUserId() {
