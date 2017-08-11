@@ -1,3 +1,3 @@
-GitRepositoriesView.GitDirectories=/home/neeraj/git/.git\:
-GitRepositoriesView.GitDirectories.relative=.git\:
+GitRepositoriesView.GitDirectories=/home/neeraj/my-app/.git\:/home/neeraj/git/.git\:
+GitRepositoriesView.GitDirectories.relative=/home/neeraj/my-app/.git\:.git\:
 eclipse.preferences.version=1
