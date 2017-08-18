@@ -1,0 +1,194 @@
+package com.app.web;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.app.entity.Credential;
+import com.app.entity.Post;
+import com.app.entity.User;
+import com.app.services.CredentialServiceImpl;
+import com.app.services.PostServiceImpl;
+import com.app.services.UserServiceImpl;
+
+@CrossOrigin(maxAge = 3600)
+@RestController
+@RequestMapping("/api/v1")
+public class MainController {
+
+	@Autowired
+	private CredentialServiceImpl crdntlService;
+	
+	@Autowired
+	private UserServiceImpl usrService;
+	
+	@Autowired
+	private PostServiceImpl postService;
+	
+	@PostMapping("/user")
+	public ResponseEntity<User> adduser(@RequestBody User user){
+		User usr = usrService.saveUser(user);
+		return new ResponseEntity<User>(usr, HttpStatus.OK);
+	}
+	
+	@GetMapping("/getuserbypost/post/{postId}")
+	public ResponseEntity<User> getUserByPost(@PathVariable("postId") Long postId){
+		User user = postService.findUserByPostId(postId);
+		System.out.println(user.getName());
+		return new ResponseEntity<User>(user, HttpStatus.OK);
+	}
+	
+	@RequestMapping("/user/{userId}")
+	public ResponseEntity<User> getUser(@PathVariable("userId") Long userId){
+		User user;
+		try {
+			user = usrService.findById(userId);
+		} catch (Exception e) {
+			e.printStackTrace();
+			user = null;
+		}
+		return new ResponseEntity<User>(user, HttpStatus.OK);
+	}
+	
+	@PostMapping("/user/{userId}/credential")
+	public ResponseEntity<Credential> doTransaction(@PathVariable("userId") Long userId, @RequestBody Credential credential) {
+		User usr = null;
+		Credential crdntl = null;
+		
+		if(userId != null || userId != new Long(0)){
+			try {
+				usr = usrService.findById(userId);
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.err.println(e.getMessage());
+				return new ResponseEntity<Credential>(crdntl, HttpStatus.BAD_REQUEST);
+			}
+		} 
+		if(usr != null){
+			crdntl = crdntlService.saveCredential(usr, credential);
+			return new ResponseEntity<Credential>(crdntl, HttpStatus.OK);
+		} else {
+			return new ResponseEntity<Credential>(crdntl, HttpStatus.BAD_REQUEST);
+		}
+	} 
+	
+	@PostMapping("/user/{userId}/post")
+	public ResponseEntity<Post> publishPost(@PathVariable("userId") Long userId, @RequestBody Post post) {
+		User usr = null;
+		Post postInside = null; 
+		
+		if(userId != null || userId != new Long(0)){
+			try {
+				usr = usrService.findById(userId);
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.err.println(e.getMessage());
+				return new ResponseEntity<Post>(postInside, HttpStatus.BAD_REQUEST);
+			}
+		} 
+		if(usr != null){
+			postInside = postService.publishPost(usr, post);
+			return new ResponseEntity<Post>(postInside, HttpStatus.OK);
+		} else {
+			return new ResponseEntity<Post>(post, HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+	@GetMapping("/posts")
+	public ResponseEntity<List<Post>> getAllPosts(){
+		List<Post> list = postService.getAll();
+		return new ResponseEntity<List<Post>>(list, HttpStatus.OK);
+	}
+	
+	@DeleteMapping("/user/{userId}")
+	public ResponseEntity<String> deleteUser(@PathVariable("userId") Long userId) {
+		User usr = null;
+		
+		if(userId != null || userId != new Long(0)){
+			try {
+				usr = usrService.findById(userId);
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.err.println(e.getMessage());
+				return new ResponseEntity<String>("userId cannotbe null", HttpStatus.BAD_REQUEST);
+			}
+		} 
+		if(usr != null){
+			usrService.deleteUser(userId); 
+			return new ResponseEntity<String>("user deleted successfully", HttpStatus.OK);
+		} else {
+			return new ResponseEntity<String>("no user with given userId", HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+	@DeleteMapping("/user/{userId}/post/{postId}")
+	public ResponseEntity<String> deletePost(@PathVariable("userId") Long userId, 
+				@PathVariable("postId") Long postId) {
+		User usr = null;
+		Post post = null; 
+		
+		if(userId != null || userId != new Long(0)){
+			try {
+				usr = usrService.findById(userId);
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.err.println(e.getMessage());
+				return new ResponseEntity<String>("userId cannotbe null", HttpStatus.BAD_REQUEST);
+			}
+		} 
+		if(usr != null){
+			post = postService.getPostById(postId);
+			if(post != null){
+				postService.deletePost(postId);
+				return new ResponseEntity<String>("post is deleted successfully", HttpStatus.OK);
+			} else {
+				return new ResponseEntity<String>("no post with given postId", HttpStatus.BAD_REQUEST);
+			}
+			
+		} else {
+			return new ResponseEntity<String>("no user with given userId", HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+	@PutMapping("/share/user/{userId}/post/{postId}")
+	public ResponseEntity<String> sharePost(@PathVariable("userId") Long userId, 
+			@PathVariable("postId") Long postId){
+		
+		User usr = null;
+		Post post = null; 
+		
+		if(userId != null || userId != new Long(0)){
+			try {
+				usr = usrService.findById(userId);
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.err.println(e.getMessage());
+				return new ResponseEntity<String>("userId cannotbe null", HttpStatus.BAD_REQUEST);
+			}
+		} 
+		if(usr != null){
+			post = postService.getPostById(postId);
+			if(post != null){
+				postService.sharePost(usr, post);
+				return new ResponseEntity<String>("post is shared successfully", HttpStatus.OK);
+			} else {
+				return new ResponseEntity<String>("no post with given postId", HttpStatus.BAD_REQUEST);
+			}
+			
+		} else {
+			return new ResponseEntity<String>("no user with given userId", HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+}

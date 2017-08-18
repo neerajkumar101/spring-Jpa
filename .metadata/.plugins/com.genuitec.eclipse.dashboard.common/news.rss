@@ -12,12 +12,38 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Thu, 10 Aug 2017 22:00:13 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 17 Aug 2017 21:20:06 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.6.1</generator>
 	<item>
+		<title>With Genuitec, updates are free!</title>
+		<link>https://www.genuitec.com/genuitec-updates-free/</link>
+		<pubDate>Thu, 17 Aug 2017 20:22:27 +0000</pubDate>
+		<dc:creator><![CDATA[Wanda Muriy]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Webclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=534195</guid>
+		<description><![CDATA[<p>Did you know that you already have access to the latest Genuitec products, as a licensed user? This includes brand new releases &#8211; there&#8217;s no need to buy a new version when it is released.Perhaps you have gone all the way and purchased MyEclipse, our Java IDE that includes the best tools for dynamic frontend and [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/genuitec-updates-free/">With Genuitec, updates are free!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Realtime Server Monitoring App with Angular 4 , Node.js &#038; Chart.js</title>
+		<link>https://www.genuitec.com/realtime-server-monitoring-app-angular-4-node-js-chart-js/</link>
+		<pubDate>Mon, 14 Aug 2017 20:25:55 +0000</pubDate>
+		<dc:creator><![CDATA[Bob at Genuitec]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=533461</guid>
+		<description><![CDATA[<p>This article will show you how to build a very simple monitor that allows you to observe some OS parameters, such as free memory available. We will be using Node.js, Angular 4 and Chart.js, so ensure you have Node and Angular IDE installed. To create our development server, we will be using Vagrant, click here [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/realtime-server-monitoring-app-angular-4-node-js-chart-js/">Realtime Server Monitoring App with Angular 4 , Node.js &amp; Chart.js</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>Navigating through an Angular Project</title>
 		<link>https://www.genuitec.com/navigating-angular-project/</link>
 		<pubDate>Thu, 10 Aug 2017 15:41:12 +0000</pubDate>
@@ -253,44 +279,14 @@
 		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/coding-devstyle-summer/">Coding DevStyle This Summer!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>Create an Ecommerce Dashboard with Angular 4</title>
-		<link>https://www.genuitec.com/create-ecommerce-dashboard-angular-4/</link>
-		<pubDate>Wed, 21 Jun 2017 18:06:30 +0000</pubDate>
-		<dc:creator><![CDATA[Bob at Genuitec]]></dc:creator>
-				<category><![CDATA[Eclipse]]></category>
-		<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[MyEclipse]]></category>
-		<category><![CDATA[Programming Tips]]></category>
-		<category><![CDATA[angular 4 app]]></category>
-		<category><![CDATA[create angular app]]></category>
-		<category><![CDATA[create dashboard]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=527591</guid>
-		<description><![CDATA[<p>In this Angular 4 tutorial we are going to create a dashboard for an e-commerce store which will highlight key metrics and show top selling products. In the course of this tutorial, we will be using Angular IDE.Let’s get started by firing up our Angular IDE and create a new Angular project named StoreReporter.Next, we [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/create-ecommerce-dashboard-angular-4/">Create an Ecommerce Dashboard with Angular 4</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>Genuitec Went Virtual Before It Was Cool!</title>
-		<link>https://www.genuitec.com/genuitec-went-virtual-before-it-was-cool/</link>
-		<pubDate>Mon, 19 Jun 2017 12:28:04 +0000</pubDate>
-		<dc:creator><![CDATA[Wanda Muriy]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=526653</guid>
-		<description><![CDATA[<p>Home is where the… work is? Indeed! More and more companies are choosing the online world, and we are no exception. Why be tied to an office if your job can literally accompany you wherever you go? That is the case for developers who can be working peacefully in the comfort of their homes or [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/genuitec-went-virtual-before-it-was-cool/">Genuitec Went Virtual Before It Was Cool!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
 <!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
 
-Object Caching 9276/9391 objects using disk
+Object Caching 9246/9554 objects using disk
 Page Caching using disk: enhanced (Requested URI is rejected)
 Content Delivery Network via resources.cloud.genuitec.com
-Database Caching 41/43 queries in 0.006 seconds using disk
+Database Caching 4/49 queries in 1.313 seconds using disk
 
- Served from: www.genuitec.com @ 2017-08-10 23:39:51 by W3 Total Cache -->
+ Served from: www.genuitec.com @ 2017-08-17 23:34:02 by W3 Total Cache -->

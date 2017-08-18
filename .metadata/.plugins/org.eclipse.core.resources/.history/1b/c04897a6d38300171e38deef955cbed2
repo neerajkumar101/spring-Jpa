@@ -1,0 +1,74 @@
+package com.app.services;
+
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.app.entity.Post;
+import com.app.entity.User;
+import com.app.repo.PostRepo;
+import com.app.repo.UserRepo;
+
+@Service
+public class PostServiceImpl implements PostServiceInterface {
+
+	@Autowired
+	private PostRepo postRepo;
+	
+	//breaking an operation of context isolation principle 
+	@Autowired
+	private UserRepo userRepo;
+	
+	@Override
+	public Post publishPost(User user, Post post) {
+		post.setLikeCount(new Long(0));
+		post.setShareCount(new Long(0));
+		post.setUser(user);
+		Post postSaved = postRepo.save(post);
+		return postSaved;
+	}
+
+	@Override
+	public Post getPostById(Long postId) {
+		Post post = postRepo.findOne(postId);
+		return post;
+	}
+
+	@Override
+	public List<Post> getAll() {
+		List<Post> list = postRepo.findAll();
+		return list;
+	}
+
+	@Override
+	public void deletePost(Long postId) {
+		postRepo.delete(postId);
+	}
+
+	@Override
+	public Post sharePost(User sharingUser, Post post) {
+		post.setShareCount(post.getShareCount()+1);
+		post.addSharedBy(sharingUser);
+		postRepo.save(post);
+		
+		post.addSharedBy(sharingUser);
+		postRepo.save(post);
+		return post;
+	}
+
+	@Override
+	public User findUserByPostId(long postId) {
+		Post post = postRepo.findOne(postId);
+		User user = post.getUser();
+		return user;
+	}
+
+	@Override
+	public Set<User> postSharedBy(Long postId) {
+		Post post = postRepo.findOne(postId);
+		Set<User> set = post.getSharedBy();
+		return set;
+	}
+}

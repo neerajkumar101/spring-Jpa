@@ -1,6 +1,9 @@
 package com.app.entity;
 
+import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -10,10 +13,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="post_tbl")
@@ -25,6 +33,7 @@ public class Post {
 	protected Long postId; 
 	
 	@Column(name="post_text")
+	@NotBlank
 	private String postText;
 	
 	@Column(name="like_count")
@@ -33,14 +42,17 @@ public class Post {
 	@Column(name="share_count")
 	private Long shareCount;
 	
-	@ManyToOne(fetch=FetchType.LAZY, cascade={CascadeType.PERSIST, CascadeType.MERGE})
+	@ManyToOne(cascade={CascadeType.PERSIST, CascadeType.MERGE})
 	@JoinColumn(name="user_id")
 	@JsonBackReference
 	private User user;
-	
-	@ManyToOne(fetch=FetchType.LAZY, cascade={CascadeType.PERSIST, CascadeType.MERGE})
-	@JoinColumn(name="shared_by")
-	private User sharedBy;
+		
+	@JsonIgnore
+	@ManyToMany(cascade={CascadeType.PERSIST, CascadeType.MERGE})
+	@JoinTable(name="shared_posts",
+			joinColumns=@JoinColumn(name="shared_post_id"),
+			inverseJoinColumns=@JoinColumn(name="sharing_user_id"))
+	private Set<User> sharedBy = new HashSet<>();
 
 	public Long getPostId() {
 		return postId;
@@ -78,12 +90,13 @@ public class Post {
 		this.user = user;
 	}
 
-	public User getSharedBy() {
+	public Set<User> getSharedBy() {
 		return sharedBy;
 	}
 	
-	public void setSharedBy(User sharedBy) {
-		this.sharedBy = sharedBy;
+	public void addSharedBy(User user) {
+//		this.sharedBy = sharedBy;
+		this.sharedBy.add(user);
 	}
 
 	@Override

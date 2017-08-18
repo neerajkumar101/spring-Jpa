@@ -32,4 +32,11 @@ public class UserServiceImpl implements UserServiceInterface {
 		userRepo.delete(userId);
 	}
 
+	@Override
+	public User findUserByEmail(String Email) {
+		User user = userRepo.findByEmail(Email);
+		return user;
+	}
+
+
 }
